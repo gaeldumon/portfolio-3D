@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import EventEmitter from "./eventEmitter";
 
@@ -64,7 +64,7 @@ export default class Resources extends EventEmitter {
         this.items[source.name] = file;
 
         this.loaded++;
-        
+
         if (this.loaded === this.toLoad) {
             this.trigger('ready');
         }

@@ -27,9 +27,9 @@ export default [
         path: 'models/Fox/glTF/Fox.gltf'
     },
     {
-        name: 'televisionModel',
+        name: 'gltfTvModel',
         type: 'gltfModel',
-        path: 'models/Television/scene.gltf'
+        path: 'models/Television/gltf/scene.gltf'
     },
     {
         name: 'channelTextureInstantVital',

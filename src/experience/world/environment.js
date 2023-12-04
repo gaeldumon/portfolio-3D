@@ -14,11 +14,11 @@ export default class Environment {
         }
 
         this.setSunLight();
-        this.setEnvironmentMap();
+        //this.setEnvironmentMap();
     }
 
     setSunLight() {
-        this.ambientLight = new THREE.AmbientLight('#ffffff', 0.4);
+        this.ambientLight = new THREE.AmbientLight('#ffffff', 0.9);
         this.scene.add(this.ambientLight);
     }
 
