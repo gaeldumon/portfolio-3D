@@ -19,7 +19,7 @@ export default class Environment {
     }
 
     setBackground() {
-        this.scene.background = new THREE.Color('#000000');
+        this.scene.background = new THREE.Color('#ffffff');
     }
 
     setSunLight() {
