@@ -7,7 +7,7 @@ export default class Tv {
         this.experience = new Experience();
         this.scene = this.experience.scene;
         this.resources = this.experience.resources;
-        this.resource = this.resources.items.gltfTvModel.scene.children[0];
+        this.resource = this.resources.items.gltfTvModel.scene;
         this.time = this.experience.time;
 
         this.debug = this.experience.debug;
@@ -21,14 +21,7 @@ export default class Tv {
 
     setModel() {
         this.model = this.resource;
-        console.log("TV SKETCHFAB MODEL", this.model);
         this.model.position.set(0, -1, 0);
         this.scene.add(this.model);
-
-        this.model.traverse((child) => {
-            if (child instanceof THREE.Mesh) {
-                child.castShadow = true;
-            }
-        });
     }
 }

@@ -53,7 +53,9 @@ export default class Resources extends EventEmitter {
 
                 this.loaders.cubeTextureLoader.load(
                     source.path,
-                    (file) => this.sourceLoaded(source, file)
+                    (file) => {
+                        this.sourceLoaded(source, file)
+                    }
                 );
 
             }
