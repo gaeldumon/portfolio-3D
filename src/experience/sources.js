@@ -12,33 +12,8 @@ export default [
         ]
     },
     {
-        name: 'grassColorTexture',
-        type: 'texture',
-        path: 'textures/dirt/color.jpg'
-    },
-    {
-        name: 'grassNormalTexture',
-        type: 'texture',
-        path: 'textures/dirt/normal.jpg'
-    },
-    {
-        name: 'foxModel',
-        type: 'gltfModel',
-        path: 'models/Fox/glTF/Fox.gltf'
-    },
-    {
         name: 'gltfTvModel',
         type: 'gltfModel',
         path: 'models/Television/gltf/scene.gltf'
-    },
-    {
-        name: 'channelTextureInstantVital',
-        type: 'texture',
-        path: 'textures/tvchannel/instantvital.gif'
-    },
-    {
-        name: 'channelTextureAdnFamily',
-        type: 'texture',
-        path: 'textures/tvchannel/adnfamily.gif'
     }
 ]
